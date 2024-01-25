@@ -1,0 +1,9 @@
+.App {
+    display: flex;
+
+    .block-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

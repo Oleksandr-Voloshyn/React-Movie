@@ -1,0 +1,57 @@
+.films-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    place-content: space-between space-evenly;
+    grid-gap: 1rem 1rem;
+    border: 1px solid black;
+
+    .cart-movie {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        &__poster {
+            object-fit: cover;
+            border-radius: 0.8rem;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+            max-width: 100%;
+
+        }
+
+        .block-describe {
+            // border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+            p {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            div {
+                margin-bottom: 10px;
+
+            }
+
+            .star {
+                width: 25px;
+            }
+        }
+    }
+}
+
+.cart-movie:hover {
+    background-color: gray;
+    transform: scale(1.018);
+    transition: transform 0.25s;
+    overflow: hidden;
+
+    .block-describe {}
+
+}
